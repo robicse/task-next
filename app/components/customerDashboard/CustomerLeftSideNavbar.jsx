@@ -1,6 +1,6 @@
 "use client";
 import { getUserDashboard } from "@/app/services/userdashboard/getUserDashboard";
-import { NagadhatPublicUrl, removeRequestPath } from "@/app/utils";
+import { PublicUrl, removeRequestPath } from "@/app/utils";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -58,9 +58,9 @@ const CustomerLeftSideNavbar = ({ authSessionData, toggleSidebar }) => {
 
     let profilePic;
     if (profilePicture) {
-        profilePic = `${NagadhatPublicUrl}/${profilePicture}`;
+        profilePic = `${PublicUrl}/${profilePicture}`;
     } else if (isAffiliateUser?.profile_picture && !profilePicture) {
-        profilePic = `${NagadhatPublicUrl}/${isAffiliateUser?.profile_picture}`;
+        profilePic = `${PublicUrl}/${isAffiliateUser?.profile_picture}`;
     } else {
         profilePic = "/images/avatar-demo.png"
     }

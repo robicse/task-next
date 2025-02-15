@@ -1,8 +1,10 @@
-
+// For Live staging - production
+export const apiBaseUrl = "http://task.robisoftbd.com/api";
+export const PublicUrl = "http://task.robisoftbd.com";
 
 // For Localhost 2 way
-export const apiBaseUrl = "http://127.0.0.1:8000/api";
-export const NagadhatPublicUrl = "http://127.0.0.1:8000";
+// export const apiBaseUrl = "http://127.0.0.1:8000/api";
+// export const PublicUrl = "http://127.0.0.1:8000";
 
 
 
